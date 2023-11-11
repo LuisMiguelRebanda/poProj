@@ -24,8 +24,12 @@ public class User {
 
     public void addSpreadSheet(Spreadsheet sheet) {
         _spreadSheets.add(sheet);
+        _spreadSheetCounter++;
     }
-    public void removeSpreadSheet(Spreadsheet sheet) {_spreadSheets.remove(sheet); }
+    public void removeSpreadSheet(Spreadsheet sheet) {
+        _spreadSheets.remove(sheet);
+        _spreadSheetCounter--;
+    }
 
     public final String getName() {
         return _name;
