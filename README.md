@@ -5,5 +5,5 @@ Compile:  javac -cp po-uilib.jar:. `find xxl -name "*.java"`
 
 Run:      java -cp po-uilib.jar:. xxl.app.App 
 
-Tests:    bash runtests.sh 
+Tests (compile / run):    bash runtests.sh 
 
