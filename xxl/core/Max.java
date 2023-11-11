@@ -2,15 +2,10 @@ package xxl.core;
 
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
-
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.List;
 
 /** This function was added in the evaluation */
-public class Max extends IntervalFunction implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class Max extends IntervalFunction {
     public Max(Range range) {
         super(range, "MAX");
         this.setValue(compute());

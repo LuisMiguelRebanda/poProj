@@ -1,14 +1,9 @@
 package xxl.core;
 
 import xxl.core.exception.EmptyCellException;
-
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.List;
 
-public abstract class IntervalFunction extends Function implements Serializable, CellObserver {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public abstract class IntervalFunction extends Function implements CellObserver {
     private Range _range;
     public IntervalFunction(Range range, String name) {
         super(name);

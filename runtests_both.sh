@@ -1,9 +1,13 @@
 #!/bin/bash
 
+javac -cp po-uilib.jar:. `find xxl -name "*.java"`
+
 let total=0;
 let correct=0;
 
-for x in testsBoth-EF-Submissao/testsBoth/*.in; do
+
+
+for x in testsBothAllEI/testsBoth/*.in; do
     if [ -e ${x%.in}.import ]; then
         java -cp :po-uilib.jar:. -Dimport=${x%.in}.import -Din=$x -DwriteInput=true -Dout=${x%.in}.outhyp xxl.app.App;
     else
@@ -24,6 +28,7 @@ done
 
 rm -f saved*
 let res=100*$correct/$total
+rm `find xxl -name "*.class"`
 echo ""
 echo "Total Tests = " $total
 echo "Passed = " $res"%"

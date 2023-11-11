@@ -3,13 +3,9 @@ package xxl.core;
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
 
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.List;
 
-public class Average extends IntervalFunction implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class Average extends IntervalFunction {
     public Average(Range range) {
         super(range, "AVERAGE");
         this.setValue(compute());

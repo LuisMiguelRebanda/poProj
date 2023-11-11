@@ -3,13 +3,8 @@ package xxl.core;
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
 
-import java.io.Serial;
-import java.io.Serializable;
+public class Add extends BinaryFunction {
 
-public class Add extends BinaryFunction implements Serializable {
-
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
     public Add(Content one, Content two) {
         super("ADD", one, two);
     }

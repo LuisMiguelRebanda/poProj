@@ -4,12 +4,7 @@ import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.IntegerNotStringException;
 import xxl.core.exception.StringNotIntegerException;
 
-import java.io.Serial;
-import java.io.Serializable;
-
-public abstract class Function extends Content implements Serializable, Visited {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public abstract class Function extends Content {
     private final String _name;
     private Literal _value;
 

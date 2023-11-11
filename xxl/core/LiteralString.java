@@ -2,12 +2,7 @@ package xxl.core;
 
 import xxl.core.exception.StringNotIntegerException;
 
-import java.io.Serial;
-import java.io.Serializable;
-
-public class LiteralString extends Literal  implements Serializable, Visited {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class LiteralString extends Literal {
     private String _value;
 
     public LiteralString(String s) {

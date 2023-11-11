@@ -3,13 +3,9 @@ package xxl.core;
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.IntegerNotStringException;
 
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.List;
 
-public class Concat extends IntervalFunction implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class Concat extends IntervalFunction {
     public Concat(Range range) {
         super(range, "CONCAT");
     }

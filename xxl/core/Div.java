@@ -3,12 +3,7 @@ package xxl.core;
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
 
-import java.io.Serial;
-import java.io.Serializable;
-
-public class Div extends BinaryFunction implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class Div extends BinaryFunction {
     public Div(Content one, Content two) {
         super("DIV", one, two);
     }

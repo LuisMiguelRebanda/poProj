@@ -2,14 +2,9 @@ package xxl.core;
 
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
-
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.List;
 
-public class Product extends IntervalFunction implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class Product extends IntervalFunction {
     public Product(Range range) {
         super(range, "PRODUCT");
     }

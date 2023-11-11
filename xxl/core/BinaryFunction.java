@@ -2,12 +2,7 @@ package xxl.core;
 
 import xxl.core.exception.EmptyCellException;
 
-import java.io.Serial;
-import java.io.Serializable;
-
-public abstract class BinaryFunction extends Function implements Serializable, CellObserver {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public abstract class BinaryFunction extends Function implements CellObserver {
     private final Content _firstContent;
     private final Content _secondContent;
     public BinaryFunction(String name, Content one, Content two) {

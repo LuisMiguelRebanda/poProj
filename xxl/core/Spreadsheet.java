@@ -1,14 +1,9 @@
 package xxl.core;
-import com.sun.source.tree.TryTree;
 import xxl.app.exception.UnknownFunctionException;
-import xxl.core.*;
-// FIXME import classes
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.*;
 
-import xxl.app.exception.InvalidCellRangeException;
 import xxl.core.exception.*;
 
 /**
@@ -18,7 +13,6 @@ public class Spreadsheet implements Serializable {
   @Serial
   private static final long serialVersionUID = 202308312359L;
 
-  // FIXME define attributes
   private final int _rows;
   private final int _columns;
   private boolean _changed;
@@ -137,7 +131,7 @@ public class Spreadsheet implements Serializable {
   Range createRange(String range) throws InvalidRangeException {
     String[] rangeCoordinates;
     int firstRow, firstColumn, lastRow, lastColumn;
-    boolean horizontal = false;
+
 
     if (range.indexOf(':') != -1) {
       rangeCoordinates = range.split("[:;]");
@@ -155,8 +149,6 @@ public class Spreadsheet implements Serializable {
       throw new InvalidRangeException(range, this);
     }
     // assigns the orientation of the range (horizontal or vertical)
-    if (firstRow == lastRow)
-      horizontal = true;
     return new Range(firstRow, firstColumn, lastRow, lastColumn, this);
   }
 

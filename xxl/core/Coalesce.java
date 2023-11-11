@@ -3,13 +3,9 @@ package xxl.core;
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
 
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.List;
 
-public class Coalesce extends IntervalFunction implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class Coalesce extends IntervalFunction {
     public Coalesce(Range range) {
         super(range, "COALESCE");
     }

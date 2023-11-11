@@ -2,12 +2,7 @@ package xxl.core;
 
 import xxl.core.exception.EmptyCellException;
 
-import java.io.Serial;
-import java.io.Serializable;
-
-public class Reference extends Content implements Serializable, Visited {
-    @Serial
-    private static final long serialVersionUID = 202308312359L;
+public class Reference extends Content {
     private final int _row;
     private final int _column;
     private final Spreadsheet _sheet;
