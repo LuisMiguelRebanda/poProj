@@ -1,5 +1,7 @@
 #!/bin/bash
 
+javac -cp po-uilib.jar:. `find xxl -name "*.java"`
+
 let total=0;
 let correct=0;
 
@@ -25,6 +27,7 @@ done
 
 rm -f saved*
 rm -f asas
+rm `find xxl -name "*.class"`
 let res=100*$correct/$total
 echo ""
 echo "Total Tests = " $total
