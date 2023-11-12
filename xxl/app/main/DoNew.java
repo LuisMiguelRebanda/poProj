@@ -5,7 +5,6 @@ import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 import xxl.app.exception.InvalidCellRangeException;
 import xxl.core.Calculator;
-import xxl.core.Spreadsheet;
 
 /**
  * Open a new file.

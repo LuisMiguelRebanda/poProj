@@ -1,5 +1,4 @@
 package xxl.app.main;
-import xxl.app.main.DoNew;
 import xxl.core.Calculator;
 
 /**

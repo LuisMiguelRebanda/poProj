@@ -3,10 +3,7 @@ package xxl.app.edit;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 import xxl.app.exception.InvalidCellRangeException;
-import xxl.core.Cell;
 import xxl.core.Spreadsheet;
-// FIXME import classes
-
 import xxl.core.exception.InvalidCellAddressException;
 import xxl.core.exception.InvalidRangeException;
 import xxl.core.exception.UnrecognizedEntryException;

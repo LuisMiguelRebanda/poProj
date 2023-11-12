@@ -5,13 +5,7 @@ import pt.tecnico.uilib.menus.CommandException;
 import xxl.app.exception.InvalidCellRangeException;
 import xxl.core.Spreadsheet;
 import xxl.core.exception.InvalidRangeException;
-// FIXME import classes
 
-import xxl.core.exception.InvalidRangeException;
-import xxl.core.Content;
-import xxl.core.Range;
-import xxl.core.exception.UnrecognizedEntryException;
-import xxl.core.exception.InvalidCellAddressException;
 /**
  * Copy command.
  */

@@ -9,7 +9,6 @@ import xxl.core.exception.MissingFileAssociationException;
 import xxl.core.exception.UnavailableFileException;
 import xxl.app.exception.FileOpenFailedException;
 
-import java.io.IOException;
 
 /**
  * Open existing file.

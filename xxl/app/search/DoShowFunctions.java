@@ -4,7 +4,6 @@ import pt.tecnico.uilib.menus.Command;
 import xxl.core.Cell;
 import xxl.core.Spreadsheet;
 import xxl.core.exception.UnrecognizedEntryException;
-// FIXME import classes
 
 /**
  * Command for searching function names.

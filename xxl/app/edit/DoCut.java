@@ -3,11 +3,8 @@ package xxl.app.edit;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 import xxl.app.exception.InvalidCellRangeException;
-import xxl.core.Cell;
-import xxl.core.Range;
 import xxl.core.Spreadsheet;
 import xxl.core.exception.InvalidRangeException;
-// FIXME import classes
 
 /**
  * Cut command.
