@@ -1,5 +1,7 @@
 #!/bin/bash
 
+javac -cp po-uilib.jar:. `find xxl -name "*.java"`
+
 let total=0;
 let correct=0;
 
@@ -30,4 +32,6 @@ echo "Total Tests = " $total
 echo "Passed = " $res"%"
 printf "$failures"
 echo "Done."
+
+rm `find xxl -name "*.class"`
 
