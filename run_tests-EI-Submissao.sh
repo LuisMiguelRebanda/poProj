@@ -1,5 +1,7 @@
 #!/bin/bash
 
+javac -cp po-uilib.jar:. `find xxl -name "*.java"`
+
 let total=0;
 let correct=0;
 
@@ -17,12 +19,14 @@ for x in tests-EI-Submissao/tests/*.in; do
 #        echo "FAIL: $x. See file ${x%.in}.diff " ;
     else
         let correct++;
-        #echo -n "."
+        echo -n "."
         rm -f ${x%.in}.diff ${x%.in}.outhyp ; 
     fi
     let total++;
 done
 
+rm saved*
+rm `find xxl -name "*.class"`
 let res=100*$correct/$total
 echo ""
 echo "Total Tests = " $total

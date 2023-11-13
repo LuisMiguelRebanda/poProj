@@ -26,12 +26,11 @@ for x in testsAllEF/tests/*.in; do
 done
 
 rm -f saved*
+rm `find xxl -name "*.class"`
 let res=100*$correct/$total
 echo ""
 echo "Total Tests = " $total
 echo "Passed = " $res"%"
 printf "$failures"
 echo "Done."
-
-rm `find xxl -name "*.class"`
 

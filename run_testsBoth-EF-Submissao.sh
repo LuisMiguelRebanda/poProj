@@ -5,8 +5,6 @@ javac -cp po-uilib.jar:. `find xxl -name "*.java"`
 let total=0;
 let correct=0;
 
-
-
 for x in testsBoth-EF-Submissao/testsBoth/*.in; do
     if [ -e ${x%.in}.import ]; then
         java -cp :po-uilib.jar:. -Dimport=${x%.in}.import -Din=$x -DwriteInput=true -Dout=${x%.in}.outhyp xxl.app.App;
@@ -20,12 +18,14 @@ for x in testsBoth-EF-Submissao/testsBoth/*.in; do
         failures=$failures"Fail: $x: See file ${x%.in}.diff\n" ;
     else
         let correct++;
-        #echo -n "."
+        echo -n "."
         rm -f ${x%.in}.diff ${x%.in}.outhyp ; 
     fi
     let total++;
 done
 
+rm saved*
+rm `find xxl -name "*.class"`
 let res=100*$correct/$total
 echo ""
 echo "Total Tests = " $total
