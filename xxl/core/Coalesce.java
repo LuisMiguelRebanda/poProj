@@ -1,9 +1,9 @@
 package xxl.core;
 
+import java.util.List;
+
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
-
-import java.util.List;
 
 public class Coalesce extends IntervalFunction {
     public Coalesce(Range range) {

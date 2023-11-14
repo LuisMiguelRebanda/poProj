@@ -1,10 +1,14 @@
 package xxl.core;
-import xxl.app.exception.UnknownFunctionException;
+
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.*;
 
-import xxl.core.exception.*;
+import xxl.app.exception.UnknownFunctionException;
+import xxl.core.exception.InvalidCellAddressException;
+import xxl.core.exception.EmptyCellException;
+import xxl.core.exception.InvalidRangeException;
+import xxl.core.exception.UnrecognizedEntryException;
 
 /**
  * Class representing a spreadsheet.

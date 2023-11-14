@@ -1,4 +1,5 @@
 package xxl.core;
+
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;

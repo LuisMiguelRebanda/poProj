@@ -1,9 +1,9 @@
 package xxl.core;
 
+import java.util.List;
+
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.IntegerNotStringException;
-
-import java.util.List;
 
 public class Concat extends IntervalFunction {
     public Concat(Range range) {

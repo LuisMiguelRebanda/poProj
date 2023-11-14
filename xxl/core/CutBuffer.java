@@ -1,11 +1,11 @@
 package xxl.core;
 
-import xxl.core.exception.EmptyCellException;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import xxl.core.exception.EmptyCellException;
 
 public class CutBuffer  implements Serializable {
     @Serial

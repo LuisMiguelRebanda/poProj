@@ -1,7 +1,8 @@
 package xxl.core;
 
-import xxl.core.exception.EmptyCellException;
 import java.util.List;
+
+import xxl.core.exception.EmptyCellException;
 
 public abstract class IntervalFunction extends Function implements CellObserver {
     private Range _range;

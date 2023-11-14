@@ -2,8 +2,6 @@ package xxl.core;
 
 import java.util.List;
 import java.util.ArrayList;
-
-
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.FileInputStream;
@@ -11,10 +9,8 @@ import java.io.ObjectInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
-
 import xxl.app.exception.InvalidCellRangeException;
 import xxl.core.exception.*;
-
 
 /**
  * Class representing a spreadsheet application.

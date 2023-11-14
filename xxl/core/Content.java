@@ -1,11 +1,11 @@
 package xxl.core;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.IntegerNotStringException;
 import xxl.core.exception.StringNotIntegerException;
-
-import java.io.Serial;
-import java.io.Serializable;
 
 public abstract class Content implements Serializable, Visited {
     @Serial

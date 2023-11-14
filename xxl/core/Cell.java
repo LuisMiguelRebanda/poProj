@@ -1,13 +1,13 @@
 package xxl.core;
 
-import xxl.core.exception.EmptyCellException;
-import xxl.core.exception.IntegerNotStringException;
-import xxl.core.exception.StringNotIntegerException;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import xxl.core.exception.EmptyCellException;
+import xxl.core.exception.IntegerNotStringException;
+import xxl.core.exception.StringNotIntegerException;
 
 public class Cell implements Serializable, ObservedCell {
     @Serial
