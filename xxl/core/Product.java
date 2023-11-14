@@ -6,9 +6,11 @@ import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
 
 public class Product extends IntervalFunction {
+
     public Product(Range range) {
         super(range, "PRODUCT");
     }
+
     @Override
     protected Literal compute(){;
         int aux = 1;
@@ -23,14 +25,17 @@ public class Product extends IntervalFunction {
         }
         return new LiteralInteger(aux);
     }
+
     @Override
     Product copyContent() {
         return new Product(this.getRange());
     }
+
     @Override
     public Range getRange() {
         return super.getRange();
     }
+    
     @Override
     public List<Cell> getCells() {
         return super.getRange().getCells();

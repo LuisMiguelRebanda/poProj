@@ -1,7 +1,5 @@
 package xxl.core;
 
-import java.util.List;
-import java.util.ArrayList;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.FileInputStream;
@@ -21,7 +19,6 @@ public class Calculator {
   private String _filename;
 
   private User _activeUser;
-  private List<User> _users = new ArrayList<>();
 
   public Calculator() {
     _activeUser = new User("root");

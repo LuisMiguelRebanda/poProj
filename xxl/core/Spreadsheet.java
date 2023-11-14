@@ -14,6 +14,7 @@ import xxl.core.exception.UnrecognizedEntryException;
  * Class representing a spreadsheet.
  */
 public class Spreadsheet implements Serializable {
+  
   @Serial
   private static final long serialVersionUID = 202308312359L;
 
@@ -21,7 +22,6 @@ public class Spreadsheet implements Serializable {
   private final int _columns;
   private boolean _changed;
   private Data _cells;
-  private List<User> _users = new ArrayList<>();
   private CutBuffer _cutBuffer = new CutBuffer();
 
   /**

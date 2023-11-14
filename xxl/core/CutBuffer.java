@@ -12,9 +12,7 @@ public class CutBuffer  implements Serializable {
     private static final long serialVersionUID = 202308312359L;
     private List<Cell> _cells;
     private boolean _horizontal;
-    private int _counter;
 
-    //AAA
     public boolean getHorizontal() {
         return _horizontal;
     }
