@@ -51,5 +51,3 @@ public class Max extends IntervalFunction {
         return super.getRange().getCells();
     }
 }
-
-// test
