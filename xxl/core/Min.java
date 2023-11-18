@@ -1,11 +1,10 @@
-// this is an alteration ines
-
 package xxl.core;
 
-        import java.util.List;
+import java.util.List;
 
-        import xxl.core.exception.EmptyCellException;
-        import xxl.core.exception.StringNotIntegerException;
+import xxl.core.exception.EmptyCellException;
+import xxl.core.exception.StringNotIntegerException;
+
 
 /** This function was added in the evaluation */
 public class Min extends IntervalFunction {
@@ -26,6 +25,7 @@ public class Min extends IntervalFunction {
                     counter++;
                 }
                 if (c.value().asInt() < auxInt) {
+
                     auxInt = c.value().asInt();
                     counter++;
                 }
