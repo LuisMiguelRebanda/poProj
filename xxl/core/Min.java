@@ -53,3 +53,5 @@ public class Min extends IntervalFunction {
         return super.getRange().getCells();
     }
 }
+
+// INES INES INES INES INES INES INES
