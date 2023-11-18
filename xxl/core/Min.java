@@ -54,4 +54,5 @@ public class Min extends IntervalFunction {
     }
 }
 
-// INES INES INES INES INES INES INES
+
+// INES INES IENS IESN ADÇSLKFJASLÇFJ ASDLÇK FJ
