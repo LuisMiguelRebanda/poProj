@@ -158,6 +158,8 @@ class Parser {
             case "CONCAT" -> new Concat(range);
             case "COALESCE" -> new Coalesce(range);
             case "MAX" -> new Max(range);
+            case "MIN" -> new Min(range);
+
             default -> throw new UnrecognizedEntryException(functionName);
         };
     }
