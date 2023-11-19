@@ -1,17 +1,13 @@
 package xxl.core;
 
 import java.util.List;
-
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
-
-/** This function was added in the evaluation */
 public class Max extends IntervalFunction {
     public Max(Range range) {
         super(range, "MAX");
         this.setValue(compute());
     }
-
     @Override
     protected Literal compute() {
         int counter = 0;

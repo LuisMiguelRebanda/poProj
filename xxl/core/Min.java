@@ -1,12 +1,8 @@
 package xxl.core;
-
 import java.util.List;
-
 import xxl.core.exception.EmptyCellException;
 import xxl.core.exception.StringNotIntegerException;
 
-
-/** This function was added in the evaluation */
 public class Min extends IntervalFunction {
     public Min(Range range) {
         super(range, "MAX");
@@ -53,6 +49,3 @@ public class Min extends IntervalFunction {
         return super.getRange().getCells();
     }
 }
-
-
-// INES INES IENS IESN ADÇSLKFJASLÇFJ ASDLÇK FJ
